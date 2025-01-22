@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calzado Hombre - THE PILDORX</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Estilos para la página de calzado hombre */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        .header {
+            background: linear-gradient(90deg, #0f2027, #203a43, #2c5364);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .header-content h1 {
+            font-size: 3rem;
+            margin: 0;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+        .filter-section {
+            padding: 30px 20px;
+            background-color: #203a43;
+            color: white;
+            text-align: center;
+        }
+        .filter-section h2 {
+            font-size: 2rem;
+        }
+        .filter-section label {
+            font-size: 1.2rem;
+        }
+        .product-group {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+        .product {
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+            width: 280px;
+            text-align: center;
+            padding: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .product:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+        }
+        .product img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .product h3 {
+            font-size: 1.5rem;
+            color: #203a43;
+            margin: 15px 0;
+        }
+        .product p {
+            font-size: 1rem;
+            color: #777;
+            margin: 10px 0;
+        }
+        .product-price {
+            font-size: 1.2rem;
+            color: #203a43;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <h1>Calzado Hombre - THE PILDORX</h1>
+            <p>Explora más variedad y elige el calzado perfecto para ti.</p>
+        </div>
+    </header>
+
+    <div class="filter-section">
+        <h2>Filtrar por Precio</h2>
+        <form>
+            <label for="min-price">Precio mínimo: </label>
+            <input type="number" id="min-price" name="min-price" placeholder="Precio mínimo" />
+            <label for="max-price">Precio máximo: </label>
+            <input type="number" id="max-price" name="max-price" placeholder="Precio máximo" />
+            <button type="submit">Filtrar</button>
+        </form>
+    </div>
+
+    <div class="product-group">
+        <!-- Productos de Calzado Hombre -->
+        <div class="product">
+            <img src="calzado-hombre1.jpg" alt="Zapato Deportivo 1">
+            <h3>Zapato Deportivo 1</h3>
+            <p>Perfecto para tus entrenamientos.</p>
+            <p class="product-price">$50.00</p>
+        </div>
+        <div class="product">
+            <img src="calzado-hombre2.jpg" alt="Zapato Deportivo 2">
+            <h3>Zapato Deportivo 2</h3>
+            <p>Comodidad para tus pies.</p>
+            <p class="product-price">$60.00</p>
+        </div>
+        <div class="product">
+            <img src="calzado-hombre3.jpg" alt="Zapato Deportivo 3">
+            <h3>Zapato Deportivo 3</h3>
+            <p>Para un estilo único.</p>
+            <p class="product-price">$70.00</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 THE PILDORX. Todos los derechos reservados. | Esmeraldas, Ecuador</p>
+    </footer>
+</body>
+</html>

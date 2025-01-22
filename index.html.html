@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The PILDORX - Calzado</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color:rgb(54, 54, 53);
+            color: #333;
+        }
+        .header {
+            background: linear-gradient(90deg, #0f2027, #203a43, #2c5364);
+            color: rgb(250, 245, 245);
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .header-content h1 {
+            font-size: 3rem;
+            margin: 0;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+        .header-content p {
+            margin: 15px 0;
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .bnt-1 {
+            background-color: #ff5a5f;
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 1rem;
+            transition: background-color 0.3s ease;
+        }
+        .bnt-1:hover {
+            background-color: #e0464f;
+        }
+        .ropa-content {
+            text-align: center;
+            padding: 40px 20px;
+        }
+        .ropa-content h2 {
+            font-size: 2.5rem;
+            color: #eaf2f5;
+        }
+        .ropa-content p {
+            font-size: 1.1rem;
+            color: #faf6f6;
+            margin-bottom: 30px;
+        }
+        .Calzado-group {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin: 20px 0;
+        }
+        .calzado-1 {
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+            overflow: hidden;
+            width: 280px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .calzado-1:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+        }
+        .calzado-1 img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .calzado-1 h3 {
+            font-size: 1.5rem;
+            color: #203a43;
+            margin: 15px 0;
+        }
+        .calzado-1 p {
+            font-size: 1rem;
+            color: #777;
+            margin: 10px 0 20px;
+        }
+        .like-btn {
+            background-color: #ff5a5f;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .like-btn:hover {
+            background-color: #e0464f;
+        }
+        .favorite {
+            font-size: 24px;
+            color: grey;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        .favorite.liked {
+            color: red;
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <h1>THE PILDORX</h1>
+            <p>¡El lugar donde la calidad y el ahorro se encuentran! <br> 
+               Compra con estilo y confianza.</p>
+            <a href="contacto.html" class="bnt-1">Más Información</a>
+        </div>
+    </header>
+
+    <div class="ropa-content container">
+        <h2>Calzado Exclusivo</h2>
+        <p>Explora nuestra colección y elige el diseño perfecto para ti.</p>
+
+        <div class="Calzado-group">
+            <!-- Tarjeta de Calzado Hombre -->
+            <div class="calzado-1">
+                <img src="imagen3.jpg" alt="Calzado Deportivo Hombre">
+                <h3>Calzado Deportivo Hombre</h3>
+                <p>Estilo y confort para todas tus aventuras.</p>
+                <a href="calzado-hombre.html" class="bnt-1">VER MAS</a>
+                
+            </div>
+            <!-- Tarjeta de Calzado Mujer -->
+            <div class="calzado-1">
+                <img src="calzado.jpg" alt="">
+                <h3>Calzado Deportivo Mujer</h3>
+                <p>Diseñado para destacar en cada paso.</p>
+                <a href="calzado-mujer.html" class="bnt-1">VER MAS</a>
+              
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>
+
+

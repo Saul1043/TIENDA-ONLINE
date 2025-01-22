@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The PILDORX - Calzado Mujer</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        .header {
+            background: linear-gradient(90deg, #e3c9d0, #f1e1d1, #f7b9b4);
+            color: #5a2e5b;
+            padding: 50px 20px;
+            text-align: center;
+            border-bottom: 5px solid #f1e1d1;
+        }
+        .header-content h1 {
+            font-size: 3.5rem;
+            margin: 0;
+            font-weight: bold;
+            letter-spacing: 3px;
+            color: #6c2a82;
+        }
+        .header-content p {
+            margin: 15px 0;
+            font-size: 1.3rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            color: #5a2e5b;
+        }
+        .bnt-1 {
+            background-color: #ff7f7f;
+            color: white;
+            padding: 14px 35px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: background-color 0.3s ease;
+        }
+        .bnt-1:hover {
+            background-color: #e46c6c;
+        }
+        .ropa-content {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #ffffff;
+            box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+            margin: 20px auto;
+            max-width: 1100px;
+        }
+        .ropa-content h2 {
+            font-size: 3rem;
+            color: #5a2e5b;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+        .ropa-content p {
+            font-size: 1.2rem;
+            color: #777;
+            margin-bottom: 30px;
+            font-style: italic;
+        }
+        .Calzado-group {
+            display: flex;
+            justify-content: center;
+            gap: 35px;
+            flex-wrap: wrap;
+            margin: 20px 0;
+        }
+        .calzado-1 {
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+            overflow: hidden;
+            width: 280px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 2px solid #e3c9d0;
+        }
+        .calzado-1:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+        }
+        .calzado-1 img {
+            width: 100%;
+            height: 230px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+        .calzado-1 img:hover {
+            transform: scale(1.05);
+        }
+        .calzado-1 h3 {
+            font-size: 1.6rem;
+            color: #5a2e5b;
+            margin: 15px 0;
+            font-weight: 500;
+        }
+        .calzado-1 p {
+            font-size: 1.1rem;
+            color: #888;
+            margin: 10px 0 20px;
+            font-weight: 300;
+        }
+        .calzado-1 .price {
+            font-size: 1.3rem;
+            color: #d84b4b;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        .like-btn {
+            background-color: #ff7f7f;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 12px 25px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 15px;
+        }
+        .like-btn:hover {
+            background-color: #e46c6c;
+        }
+        .favorite {
+            font-size: 26px;
+            color: #f1e1d1;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        .favorite.liked {
+            color: #e0464f;
+            transform: scale(1.3);
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <h1>THE PILDORX</h1>
+            <p>Calzado femenino de calidad y elegancia para cada momento.</p>
+            <a href="https://mx.ebay.com/" class="bnt-1">Explorar Más</a>
+        </div>
+    </header>
+
+    <div class="ropa-content container">
+        <h2>Calzado Deportivo Mujer</h2>
+        <p>Elegancia, confort y diseño único para tu estilo.</p>
+
+        <div class="Calzado-group">
+            <!-- Tarjeta de Calzado Mujer 1 -->
+            <div class="calzado-1">
+                <img src="calzado-mujer1.jpg" alt="Calzado Deportivo Mujer">
+                <h3>Calzado Deportivo Mujer</h3>
+                <p>Diseñado para resaltar tu paso con comodidad y estilo.</p>
+                <p class="price">$49.99</p>
+                <button class="like-btn" onclick="likeProduct('calzado-mujer1.html')">
+                    <span class="favorite" id="like1" onclick="toggleFavorite('like1')">❤️</span> Me gusta
+                </button>
+            </div>
+            <!-- Tarjeta de Calzado Mujer 2 -->
+            <div class="calzado-1">
+                <img src="calzado-mujer2.jpg" alt="Calzado Deportivo Mujer">
+                <h3>Calzado Casual Mujer</h3>
+                <p>Para una comodidad todo el día, sin perder estilo.</p>
+                <p class="price">$59.99</p>
+                <button class="like-btn" onclick="likeProduct('calzado-mujer2.html')">
+                    <span class="favorite" id="like2" onclick="toggleFavorite('like2')">❤️</span> Me gusta
+                </button>
+            </div>
+            <!-- Tarjeta de Calzado Mujer 3 -->
+            <div class="calzado-1">
+                <img src="calzado-mujer3.jpg" alt="Calzado Deportivo Mujer">
+                <h3>Calzado Elegante Mujer</h3>
+                <p>Perfecto para una salida nocturna o un evento especial.</p>
+                <p class="price">$89.99</p>
+                <button class="like-btn" onclick="likeProduct('calzado-mujer3.html')">
+                    <span class="favorite" id="like3" onclick="toggleFavorite('like3')">❤️</span> Me gusta
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Función para redirigir al dar "Me gusta"
+        function likeProduct(url) {
+            alert('¡Producto añadido a favoritos! Redirigiendo...');
+            window.location.href = url;
+        }
+
+        // Función para manejar el cambio de estado de "Me gusta"
+        function toggleFavorite(id) {
+            const icon = document.getElementById(id);
+            icon.classList.toggle('liked');
+        }
+    </script>
+</body>
+</html>
